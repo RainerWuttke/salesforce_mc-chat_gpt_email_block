@@ -1,17 +1,17 @@
 # Countdown for Email Marketing
-Basic setup to use ChatGPT.
+Leverage AI to streamline your email campaign creation process. ChatGPT can help you generate content faster, enhance creativity, and provide valuable insights.
 
 ## Why use it?
-Useing AI to create your email campaings can speed up your process of creation and give you great insights.
+Simply call the API, and receive responses based on your provided prompts.
 
 ## How it works
 Call the API and get asnwers based on the given prompt.
 
 ## What is coded
-- A chat style layout
-- API request
+- Chat-style interface
+- API integration for seamless communication
 
 ## Future updates
-- Update to a newer version of ChatGPT
-- Create better visuals
-- Use the generated text and images automatically to email
+- Upgrade to the latest version of ChatGPT
+- Improved visual design for better user experience
+- Automatic integration of generated text and images into email campaigns
