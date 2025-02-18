@@ -1,0 +1,98 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+.writeBox {
+    display: flex;
+    gap: 1rem;
+
+    position: absolute;
+    bottom: 0;
+
+    width: calc(100% - 2rem);
+
+    padding: 1rem;
+
+    border-top: solid 2px gray;
+    background-color: white;
+}
+.writeBox input {
+    padding: .4rem 1rem;
+    font-size: 14px;
+
+    width: calc(100% - 2rem);
+
+    border: solid 2px black;
+    border-radius: 2rem;
+}
+
+.writeBox button {
+    width: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: lightseagreen;
+
+    border-radius: 2rem;
+    border: none;
+
+    cursor: pointer;
+}
+.writeBox > button img {
+    width: 100%;
+}
+
+.chatBox {
+    padding: 1rem;
+    max-height: calc(100vh - 98px);
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    overflow: auto;
+}
+
+.message {
+    padding: .5rem; 
+    border-radius: .5rem;
+    background-color: gray;
+    max-width: 80%;
+}
+.message p {
+    margin: 0;
+}
+.message.user {
+    background-color: rgb(169, 200, 201);
+    border-top-right-radius: 0;
+    align-self: flex-end;
+}
+    .message.user::before {
+        content: "Você";
+
+        width: 100%;
+
+        display: block;
+        font-size: 10px;
+        text-align: right;
+        margin-bottom: .2rem;
+    }
+.message.chat {
+    background-color: darkslategrey;
+    border-top-left-radius: 0;
+    align-self: flex-start;
+    color: white;
+}
+    .message.chat::before {
+        content: "Chat GPT";
+
+        display: block;
+        font-size: 10px;
+        margin-bottom: .2rem;
+    }
